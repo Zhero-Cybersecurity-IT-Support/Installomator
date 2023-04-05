@@ -6664,6 +6664,30 @@ zulujdk8)
     appCustomVersion(){ if [ -f "/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Info.plist" ]; then /usr/bin/defaults read "/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Info.plist" "CFBundleName" | sed 's/Zulu //'; fi }
     appNewVersion=$(echo "$downloadURL" | cut -d "-" -f 1 | sed -e "s/.*zulu//") # Cannot be compared to anything
     ;;
+munkitools-6.0.1)
+    name="munkitools-6.0.1"
+    type="pkg"
+    downloadURL="https://github.com/munki/munki/releases/download/v6.0.1/munkitools-6.0.1.4523.pkg"
+    expectedTeamID=""
+    ;;
+munkireport-python2.7)
+    name="MunkiReportPython2-2.7.18"
+    type="pkg"
+    downloadURL="https://github.com/munkireport/MunkiReport-Python/releases/download/v2.7.18/MunkiReportPython2-2.7.18.pkg"
+    expectedTeamID=""
+    ;;
+javaruntime)
+    name="JDK 19.0.2"
+    type="pkgInDmg"
+    downloadURL="https://download.oracle.com/java/19/latest/jdk-19_macos-x64_bin.dmg"
+    expectedTeamID="VB5E2TV963"
+    ;;
+ciscoanyconnect)
+    name="anyconnect-macos-4.8.03036-core-vpn-webdeploy-k9"
+    type="pkgInDmg"
+    downloadURL="https://github.com/Zhero-Cybersecurity-IT-Support/FileShare/raw/main/anyconnect-macos-4.8.03036-core-vpn-webdeploy-k9.dmg"
+    expectedTeamID="DE8Y96K9QP"
+    ;;
 *)
     # unknown label
     #printlog "unknown label $label"
