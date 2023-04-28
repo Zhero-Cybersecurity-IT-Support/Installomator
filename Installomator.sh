@@ -6692,7 +6692,7 @@ splashtopstreamer)
     name="Splashtop_Streamer_Mac_DEPLOY_INSTALLER_v3.5.6.0"
     type="pkgInDmg"
     downloadURL="https://my.splashtop.com/csrs/mac"
-    expectedTeamID=""
+    expectedTeamID=" "
     ;;
 *)
     # unknown label
