@@ -6679,7 +6679,7 @@ munkireport-python2.7)
 javaruntime)
     name="JDK 19.0.2"
     type="pkgInDmg"
-    downloadURL="https://download.oracle.com/java/19/latest/jdk-19_macos-x64_bin.dmg"
+    downloadURL="https://download.oracle.com/java/19/archive/jdk-19_macos-x64_bin.dmg"
     expectedTeamID="VB5E2TV963"
     ;;
 ciscoanyconnect)
